@@ -45,7 +45,7 @@ class MyAdapter(val list: List<User>) : RecyclerView.Adapter<MyAdapter.ViewHolde
         holder.userEmail.text = user.email
         holder.userGender.text = user.gender
         holder.userPhone.text = user.phone
-     
+
 
     }
 

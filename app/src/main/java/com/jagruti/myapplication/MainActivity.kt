@@ -10,6 +10,8 @@ import com.androidnetworking.common.Priority
 import com.androidnetworking.error.ANError
 import com.androidnetworking.interfaces.ParsedRequestListener
 import com.jagruti.myapplication.model.JsonResponse
+import com.jagruti.myapplication.userdb.UserDao
+import com.jagruti.myapplication.userdb.UserDatabase
 
 class MainActivity : AppCompatActivity() {
     lateinit var recyclerView: RecyclerView
@@ -19,6 +21,8 @@ class MainActivity : AppCompatActivity() {
         bindViews()
         getUserDetails()
     }
+
+
 
     private fun getUserDetails() {
         AndroidNetworking.get("https://randomuser.me/api/?results=100&inc=login,name,email,gender,location,phone,picture&noinfo")
