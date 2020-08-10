@@ -2,6 +2,8 @@
 <com.google.android.material.card.MaterialCardView android:layout_height="wrap_content"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:id="@+id/userCV"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -17,9 +19,10 @@
             app:layout_constraintEnd_toStartOf="@+id/userName"
             android:layout_height="50dp"/>
 
+
         <TextView
             android:id="@+id/userName"
-            android:layout_width="50dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:layout_marginStart="10dp"
@@ -29,20 +32,10 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/userImage"
-            app:layout_constraintTop_toTopOf="parent" />
-        <TextView
-            android:id="@+id/userFName"
-            android:layout_width="50dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginEnd="9dp"
-            android:layout_marginRight="9dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/userImage"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.009" />
+
+
         <TextView
             android:id="@+id/userLogin"
             android:layout_width="0dp"
@@ -53,9 +46,74 @@
             android:layout_marginEnd="9dp"
             android:layout_marginRight="9dp"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/userImage"
+            app:layout_constraintTop_toBottomOf="@+id/userName"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/userLocation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="9dp"
+            android:layout_marginRight="9dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/userImage"
+            app:layout_constraintTop_toBottomOf="@+id/userLogin"
+            app:layout_constraintVertical_bias="0.011" />
+
+        <TextView
+            android:id="@+id/userEmail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="9dp"
+            android:layout_marginRight="9dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/userImage"
+            app:layout_constraintTop_toBottomOf="@+id/userLocation"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/userGender"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="9dp"
+            android:layout_marginRight="9dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/userImage"
+            app:layout_constraintTop_toBottomOf="@+id/userEmail"
+            app:layout_constraintVertical_bias="0.02" />
+
+        <TextView
+            android:id="@+id/userPhone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="9dp"
+            android:layout_marginRight="9dp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/userImage"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/userName" />
+            app:layout_constraintTop_toBottomOf="@+id/userGender" />
+
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
